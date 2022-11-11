@@ -1,46 +1,60 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="セリヌンティウスとデートに行くメロス"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+メ「セリヌンティウス、いまから遊び行こうぜ」[l][r]
 
-メロスは激怒した。[l][r]
+セ「いいよ」
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+メ「どこいこうか？...」
+[l][r]
 
-(中略)[l][r]
-
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
-
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+[link target=*tag_tyuukagai] →中華街に行く [endlink][r]
+[link target=*tag_Shibuya] →渋谷に行く [endlink][r]
 [s]
 
-*tag_sleep
+*tag_tyuukagai
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
+[bg storage=中華街.jfif time=200]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
 
-【 BAD END 】[l][cm]
+「着いたね、肉まんたべよう！」[1][cm]
+
+[jump target=*tag_nikuman]
+
+*tag_nikuman
+
+[cm]
+
+[bg storage=肉まん.jfif time=200]
+
+「美味しいね、帰ろうか」[1][cm]
 
 [jump target=*start]
 
-*tag_run
 
-[bg storage=run.jpg time=500]
+
+
+*tag_Shibuya
+[cm]
+
+[bg storage=渋谷.jfif time=200]
+
+
+「着いたね、タピオカ飲もう！」[1][cm]
+[jump target=*tag_tapioka]
+
+*tag_tapioka
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
 
-【 GOOD END 】[l][cm]
+[bg storage=tapioka.jfif time=200]
+
+「美味しいね、帰ろうか」[1][cm]
 
 [jump target=*start]
